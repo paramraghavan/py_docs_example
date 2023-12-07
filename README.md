@@ -1,7 +1,7 @@
+# Create intelligent and beautiful documentation using Sphinx like Javadoc for Java
 
 ## Pydoc
-Create intelligent and beautiful documentation using Sphinx like Javadoc for Java
-
+Similar to the functionality of Perldoc within Perl and Javadoc within Java
 <pre>
 Pros:
   Part of the standard Python library, no additional installation required.
