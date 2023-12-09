@@ -1,7 +1,13 @@
 .. Py Docs Example documentation master file
 
-Welcome to Py Docs Example's documentation!
 ============================================
+A POC
+============================================
+
+This is an poc project for python documentation using sphinx...
+
+Getting Started
+_______________
 
 .. toctree::
    :maxdepth: 2
@@ -18,3 +24,8 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+Contact
+-------
+
+Information on how to contact, contribute, or provide feedback goes here.
