@@ -1,2 +1,2 @@
-sphinx
 # Any other dependencies
+boto3

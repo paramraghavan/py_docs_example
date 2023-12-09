@@ -1,7 +1,9 @@
 import os
 import sys
 # Add the path to your module so Sphinx can find it to generate documentation:
-sys.path.insert(0, os.path.abspath('../py_docs_example'))
+#sys.path.insert(0, os.path.abspath('../py_docs_example'))
+#sys.path.insert(0, os.path.abspath('../..'))
+sys.path.insert(0, os.path.abspath('../'))
 
 # -- Project information -----------------------------------------------------
 
@@ -33,7 +35,6 @@ master_doc = 'index'
 
 # The encoding of source files.
 source_encoding = 'utf-8-sig'
-
 
 # -- Options for HTML output -------------------------------------------------
 

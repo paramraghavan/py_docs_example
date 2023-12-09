@@ -1,0 +1,63 @@
+"""
+Install phase: 
+  Sets the Python version to 3.10 and installs dependencies. Make sure your requirements.txt file includes all the necessary packages for your project.
+Pre-build phase: 
+  This is a placeholder for any steps you might want to run before the actual build process.
+Build phase: 
+  Generates the Sphinx documentation. Adjust the sphinx-build command to match your project's source and build directories.
+Post-build phase: 
+  A simple echo command to signify the end of the build process.
+Artifacts: 
+  Specifies the files to be output by the build process. This should include your Sphinx-generated HTML files.
+Environment Variables: 
+  This section is optional and can be used to define any environment variables needed for your build.
+"""
+
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.10
+    commands:
+      - echo Installing dependencies...
+      - pip install -r requirements.txt -r requirements-dev.txt
+
+  pre_build:
+    commands:
+      - echo Running pre-build steps...
+      # You can add commands to prepare your build here
+
+  build:
+    commands:
+      - echo Running pytest...
+      - pytest tests/
+      - echo Building the Sphinx documentation...
+      - sphinx-apidoc -o docs/source py_docs_example
+      - sphinx-build -b html -c docs docs docs/build
+      #- sphinx-build -b html docs/source docs/build
+      # Replace 'docs/source/' and 'docs/build/' with your Sphinx source and build directories
+
+  post_build:
+    commands:
+      - echo Build completed on `date`
+
+# If you have any artifacts (like HTML files from Sphinx), specify them here
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'docs/build'
+#  files:
+#    - docs/build/**/*
+  # Replace 'docs/build/**/*' with the path to your Sphinx build output
+
+# Optionally, you can define environment variables
+# environment:
+#   variables:
+#     MY_VARIABLE: "value"
+
+reports:
+  pytest:
+    files:
+      - '**/test-*.xml'
+    file-format: 'JUnit'

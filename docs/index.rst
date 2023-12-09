@@ -7,7 +7,10 @@ Welcome to Py Docs Example's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   modules
+calc
+lambda_function
+utils
+
 
 Indices and tables
 ==================

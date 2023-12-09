@@ -1,6 +1,6 @@
 
 ## Pydoc
-Similar to the functionality of Perldoc within Perl and Javadoc within Java,
+Similar to the functionality of Perldoc within Perl and Javadoc within Java
 <pre>
 Pros:
   Part of the standard Python library, no additional installation required.
@@ -90,3 +90,12 @@ py_and_docs/
 </pre>
 
 ## See here, [Sphinx setup](sphinx-setup.md)
+
+## Typical buildspec.yml
+- **Install phase:** Sets the Python version to 3.10 and installs dependencies. Make sure your requirements.txt file includes all the necessary packages for your project.
+- **Pre-build phase:** This is a placeholder for any steps you might want to run before the actual build process.
+- **Build phase:** Generates the Sphinx documentation. Adjust the sphinx-build command to match your project's source and build directories.
+- **Post-build phase:** A simple echo command to signify the end of the build process.
+- **Artifacts:** Specifies the files to be output by the build process. This should include your Sphinx-generated HTML files.
+- **Environment Variables:** This section is optional and can be used to define any environment variables needed for your build.
+
