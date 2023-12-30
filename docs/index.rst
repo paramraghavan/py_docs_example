@@ -3,13 +3,15 @@
 Welcome to Py Docs Example's documentation!
 ============================================
 
+Contents:
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-calc
-lambda_function
-utils
+   installation
+   usage
+   about
 
 
 Indices and tables
