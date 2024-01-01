@@ -11,7 +11,17 @@ Contents:
 
    installation
    usage
-   about
+   modules
+
+Installation
+------------
+
+Instructions on installing MyProject can be found in the `installation` section.
+
+Usage
+-----
+
+For information on how to use MyProject, see the `usage` section.
 
 
 Indices and tables

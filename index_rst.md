@@ -1,6 +1,6 @@
 # index_rst
 
-Creating documentation with Sphinx typically involves several files, with index.rst being the main file that acts as the entry point.
+Creating documentation with Sphinx typically involves several files. index.rst is the main entry point for Sphinx documentation.
 
 ## index.rst
 The index.rst file is the root document and serves as the homepage of your documentation. It typically 
@@ -20,7 +20,6 @@ Contents:
 
    installation
    usage
-   about
 
 Indices and tables
 ==================

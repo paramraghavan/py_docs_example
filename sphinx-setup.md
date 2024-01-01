@@ -1,8 +1,14 @@
 # Sphinx Setup
 - Install Sphinx:
-  - Run `pip install sphinx` to install Sphinx.
+  - Run `pip install sphinx sphinx-autobuild` to install Sphinx.
 - Initialize Sphinx:
-  - In your terminal, **navigate to the `docs`** directory and run **`sphinx-quickstart`**.
+  - **sphinx-quickstart docs**,  creates a docs directory with the basic Sphinx structure
+  - or In your terminal, **navigate to the `docs`** directory and run **`sphinx-quickstart`**.
+    - Separate source and build directories (y/n) [n]: n , chose default no
+    - Project name : PyDocs - or whatever you want
+    - Author name(s): 
+    - Project release []: 0.1
+  - Copy the files in docs_template into docs folder or manually edit conf.py , [index.rst](./index_rst.md) and more.
 - Configure `conf.py`:
   - This file is used by Sphinx to configure various aspects of your documentation.
   - This configuration adds your project (py_docs_example) to the Python path so Sphinx can find your modules.
@@ -23,6 +29,7 @@ This file is used to package and distribute your Python project. For Sphinx, you
 ## Generating Documentation
 - Run sphinx-apidoc to generate **reStructuredText**(the `.rst`) files from your Python modules. **Navigate to your docs directory** and run.
   ```shell
+  cd docs
   sphinx-apidoc -o . ../py_docs_example
   ```
 - Build your documentation. **Inside the docs directory**, run the following and this will generate HTML documentation in `docs/_build/html`
