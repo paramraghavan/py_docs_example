@@ -40,6 +40,7 @@ source_encoding = 'utf-8-sig'
 # The theme to use for HTML and HTML Help pages.
 html_theme = 'alabaster'
 
+html_static_path = ['_static']
 # Add custom CSS file to Sphinx
 html_css_files = [
     'custom.css',

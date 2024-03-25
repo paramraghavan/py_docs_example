@@ -1,9 +1,13 @@
 /* Custom CSS for the main documentation page */
-.wy-body-for-nav {
+.body {
     background-color: #f0f0f0; /* Light gray background */
 }
 
 /* Custom CSS for the table of contents */
-.wy-nav-side {
+.sphinx-sidebar {
     background-color: #e0e0e0; /* Slightly darker gray for the TOC */
+}
+
+.document {
+    background-color: #orange; /* Light gray background */
 }
