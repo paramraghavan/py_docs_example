@@ -101,3 +101,5 @@ py_and_docs/
 - **Artifacts:** Specifies the files to be output by the build process. This should include your Sphinx-generated HTML files.
 - **Environment Variables:** This section is optional and can be used to define any environment variables needed for your build.
 
+## Sphinx html theme
+- https://www.sphinx-doc.org/en/master/usage/theming.html

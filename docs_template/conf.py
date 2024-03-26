@@ -36,12 +36,15 @@ master_doc = 'index'
 source_encoding = 'utf-8-sig'
 
 # -- Options for HTML output -------------------------------------------------
-
 # The theme to use for HTML and HTML Help pages.
-html_theme = 'alabaster'
+html_theme = 'classic'
 
-html_static_path = ['_static']
-# Add custom CSS file to Sphinx
-html_css_files = [
-    'custom.css',
-]
+# # The theme to use for HTML and HTML Help pages.
+# html_theme = 'alabaster'
+#
+#
+# html_static_path = ['_static']
+# # Add custom CSS file to Sphinx
+# html_css_files = [
+#     'custom.css',
+# ]
